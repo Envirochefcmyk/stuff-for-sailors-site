@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Stuff for Sailors</title>
+<meta name="description" content="Get in touch with Stuff for Sailors — custom marine and mobile-lifestyle fabrication in Seattle.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Stuff for Sailors logo">
+      <span class="brand-text">Stuff for Sailors</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Custom Order</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="order.html" class="nav-cta">Start a Project</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:64px 0;">
+  <div class="container" style="max-width:720px;">
+    <span class="eyebrow">Get In Touch</span>
+    <h1 style="font-size:clamp(2rem,3.6vw,2.8rem);">Have a question before you order?</h1>
+    <p class="lede">Whether it's about a custom project, the marine trades, or just a general question — reach out directly. If you already know what you need, the <a href="order.html">custom order form</a> is the fastest way to get a quote moving.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:720px;">
+    <div class="panel">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:8px;">
+        <div>
+          <span class="eyebrow" style="margin-bottom:.3em;">Email</span>
+          <p style="margin:0;"><a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a></p>
+        </div>
+        <div>
+          <span class="eyebrow" style="margin-bottom:.3em;">Phone</span>
+          <p style="margin:0;"><a href="tel:4256774829">425-677-4829</a></p>
+        </div>
+      </div>
+      <hr class="divider" style="margin:20px 0;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div>
+          <span class="eyebrow" style="margin-bottom:.3em;">Based In</span>
+          <p style="margin:0;">Seattle, WA</p>
+        </div>
+        <div>
+          <span class="eyebrow" style="margin-bottom:.3em;">Follow Along</span>
+          <div class="social-row" style="margin-top:4px;">
+            <a href="https://facebook.com" target="_blank" rel="noopener" style="filter:none;"><img src="images/fb-icon.png" alt="Facebook" style="filter:none;width:26px;height:26px;"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram" style="filter:none;width:26px;height:26px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card mt-lg">
+      <h3 style="margin-bottom:.3em;">Send a Message</h3>
+      <p class="small" style="margin-bottom:22px;">For a specific product order, use the <a href="order.html">custom order form</a> instead — it captures the details we need to quote accurately.</p>
+
+      <form data-form-name="General Contact" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="New message from stuffforsailors.com contact page">
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Subject</label><input type="text" name="subject"></div></div>
+        <div class="form-row single"><div class="field"><label>Message</label><textarea name="message" rows="5" required></textarea></div></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+        <p class="form-status" id="status-contact"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="images/logo.png" alt="Stuff for Sailors"><span>Stuff for Sailors</span></div>
+        <p class="footer-tag">Solutions for your mobile lifestyle. Boat · Van · RV. Seattle, WA.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/fb-icon.png" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Custom Order</a>
+      </div>
+      <div>
+        <h4>Order Forms</h4>
+        <a href="order.html#washboard">Washboard Rack</a>
+        <a href="order.html#binocular">Binocular Cradle</a>
+        <a href="order.html#vhf">VHF Holster</a>
+        <a href="order.html#general">Custom Project</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a>
+        <a href="tel:4256774829">425-677-4829</a>
+        <a href="contact.html">Contact page</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stuff for Sailors LLC. All rights reserved.</span>
+      <span>Seattle, WA</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('form[data-form-name]').forEach(form => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const statusEl = form.querySelector('.form-status');
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      const resp = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+      if (resp.ok) {
+        statusEl.textContent = "Thanks for reaching out — we'll get back to you soon.";
+        statusEl.className = 'form-status show ok';
+        form.reset();
+      } else { throw new Error(); }
+    } catch (err) {
+      statusEl.textContent = "Something went wrong. Please email sailoratlarge@stuffforsailors.com directly.";
+      statusEl.className = 'form-status show err';
+    } finally { btn.disabled = false; btn.textContent = 'Send Message'; }
+  });
+});
+</script>
+
+</body>
+</html>

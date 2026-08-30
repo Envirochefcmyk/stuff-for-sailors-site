@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Order — Stuff for Sailors</title>
+<meta name="description" content="Submit a custom order request for storage, mounts, or marine gear built to your exact boat, van, or RV.">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .order-nav{position:sticky;top:73px;background:var(--white);border-bottom:1px solid var(--line);z-index:40;}
+  .order-nav .container{display:flex;gap:6px;overflow-x:auto;padding:14px 28px;}
+  .order-nav a{font-family:'Poppins',sans-serif;font-weight:600;font-size:.88rem;color:var(--steel);
+    padding:9px 16px;border-radius:999px;white-space:nowrap;border:1.5px solid var(--line);}
+  .order-nav a:hover, .order-nav a.active{color:var(--ink);border-color:var(--teal);background:var(--teal-pale);text-decoration:none;}
+  .form-section{padding:64px 0;border-bottom:1px solid var(--line);}
+  .form-section:last-of-type{border-bottom:none;}
+  .form-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:30px;}
+  .form-head h2{margin-bottom:.2em;}
+  .docx-link{font-size:.86rem;color:var(--steel);display:inline-flex;align-items:center;gap:6px;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Stuff for Sailors logo">
+      <span class="brand-text">Stuff for Sailors</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="order.html" class="active">Custom Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="nav-cta">Start a Project</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:56px 0 32px;">
+  <div class="container">
+    <span class="eyebrow">Custom Order</span>
+    <h1 style="font-size:clamp(2rem,3.6vw,2.8rem);">Let's build something that fits.</h1>
+    <p class="lede">Pick the form that matches what you need. Every order starts with a prototype in low-cost PLA to confirm fit — it's yours to keep either way — before we move to the final build in your chosen material. A 50% deposit gets things started.</p>
+  </div>
+</section>
+
+<nav class="order-nav">
+  <div class="container">
+    <a href="#washboard">Washboard Rack</a>
+    <a href="#binocular">Binocular Cradle</a>
+    <a href="#vhf">VHF Holster</a>
+    <a href="#general">Custom Project</a>
+  </div>
+</nav>
+
+<!-- =========================================================
+     FORM 1 — WASHBOARD RACK
+========================================================= -->
+<section class="form-section" id="washboard">
+  <div class="container" style="max-width:820px;">
+    <div class="form-head">
+      <div>
+        <span class="eyebrow">Companionway Washboard Storage Rack</span>
+        <h2>Keep your boards stowed and protected.</h2>
+      </div>
+      <a class="docx-link" href="downloads/StuffForSailors_Order_Washboard_Rack.docx" download>&#8681; Download as Word doc</a>
+    </div>
+
+    <form class="form-card" data-form-name="Washboard Rack Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New order: Companionway Washboard Rack">
+      <input type="hidden" name="form_type" value="Washboard Rack Order">
+
+      <fieldset>
+        <legend>Client Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="field"><label>Best way to reach you</label><input type="text" name="best_contact"></div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Mailing address</label><input type="text" name="address"></div></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vessel Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Vessel name</label><input type="text" name="vessel_name"></div>
+          <div class="field"><label>Make &amp; model</label><input type="text" name="vessel_model"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Length</label><input type="text" name="vessel_length"></div>
+          <div class="field"><label>Home port / marina</label><input type="text" name="home_port"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rack Specifications</legend>
+        <div class="form-row">
+          <div class="field"><label>How many washboards?</label><input type="number" min="1" name="board_count"></div>
+          <div class="field"><label>Are all boards the same size?</label>
+            <select name="boards_same_size"><option value="">Select…</option><option>Yes</option><option>No — sizes vary</option></select>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Board dimensions (width × height × thickness — for each board if sizes differ)</label>
+            <textarea name="board_dimensions" placeholder="e.g. Board 1 (top): 18in x 14in x 0.75in&#10;Board 2 (middle): 18in x 16in x 0.75in&#10;Board 3 (bottom): 18in x 18in x 0.75in"></textarea></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Thickness of the thin edge / lip that slides into the companionway track</label><input type="text" name="lip_thickness"></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Mounting location</label><textarea name="mount_location" placeholder="Bulkhead, locker door, cockpit, etc."></textarea></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Will the innermost board sit flush against the mounting surface?</label>
+            <select name="flush_mount"><option value="">Select…</option><option>Yes, flush</option><option>No — there's a gap or standoff</option></select>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Any nearby trim, molding, or hardware that would change the needed depth?</label><textarea name="trim_notes"></textarea></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mounting Environment &amp; Material</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Where will this be mounted?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="environment" value="Interior"> Interior (inside the boat)</label>
+            <label class="check-pill"><input type="radio" name="environment" value="Exterior"> Exterior (cockpit / on deck / exposed)</label>
+          </div>
+        </div>
+        <p class="form-note">Exterior parts must be UV-stable: Black, White, or Grey (or carbon-fiber reinforced, Black or Grey). Interior mounting has far more color options — tell us what you have in mind.</p>
+        <div class="form-row single"><div class="field"><label>Preferred color / finish</label><input type="text" name="color_pref"></div></div>
+      </fieldset>
+
+      <div class="price-callout">
+        <strong>Pricing:</strong> quoted per rack once we know board count, sizes, and mounting details. Carbon-fiber reinforced: +25%. Nylon (highest durability): priced separately, by request.
+      </div>
+
+      <div class="form-row single"><div class="field"><label>Anything else we should know?</label><textarea name="notes"></textarea></div></div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Submit Order Request</button>
+      <p class="form-status" id="status-washboard"></p>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
+     FORM 2 — BINOCULAR CRADLE
+========================================================= -->
+<section class="form-section" id="binocular">
+  <div class="container" style="max-width:820px;">
+    <div class="form-head">
+      <div>
+        <span class="eyebrow">Binocular Cradle</span>
+        <h2>Custom-fit to your binoculars.</h2>
+      </div>
+      <a class="docx-link" href="downloads/StuffForSailors_Order_Binocular_Cradle.docx" download>&#8681; Download as Word doc</a>
+    </div>
+
+    <form class="form-card" data-form-name="Binocular Cradle Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New order: Binocular Cradle">
+      <input type="hidden" name="form_type" value="Binocular Cradle Order">
+
+      <fieldset>
+        <legend>Client Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="field"><label>Best way to reach you</label><input type="text" name="best_contact"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vessel Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Vessel name</label><input type="text" name="vessel_name"></div>
+          <div class="field"><label>Make &amp; model</label><input type="text" name="vessel_model"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Binocular Specifications</legend>
+        <div class="form-row">
+          <div class="field"><label>Binocular make &amp; model</label><input type="text" name="binocular_model"></div>
+          <div class="field"><label>Magnification (e.g. 7×50)</label><input type="text" name="magnification"></div>
+        </div>
+        <p class="form-note">If you can give us the make and model, we can usually find exact dimensions. Otherwise, fill in what you can below.</p>
+        <div class="form-row">
+          <div class="field"><label>Barrel diameter (each objective end)</label><input type="text" name="barrel_diameter"></div>
+          <div class="field"><label>Distance between barrel centers</label><input type="text" name="barrel_spacing"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Overall height</label><input type="text" name="binocular_height"></div>
+          <div class="field"><label>Approx. weight</label><input type="text" name="binocular_weight"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mount</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Mount type</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="mount_type" value="Rail clamp"> Rail clamp</label>
+            <label class="check-pill"><input type="radio" name="mount_type" value="Flat surface"> Flat surface / bulkhead screw mount</label>
+            <label class="check-pill"><input type="radio" name="mount_type" value="Not sure"> Not sure — advise me</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>If rail-mounted: rail outside diameter</label><input type="text" name="rail_diameter"></div>
+          <div class="field"><label>Rail orientation</label><input type="text" name="rail_orientation" placeholder="Horizontal or vertical"></div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Where on the boat will it live?</label><input type="text" name="mount_location"></div></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mounting Environment &amp; Material</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Where will this be mounted?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="environment" value="Interior"> Interior</label>
+            <label class="check-pill"><input type="radio" name="environment" value="Exterior"> Exterior (cockpit / on deck)</label>
+          </div>
+        </div>
+        <p class="form-note">Exterior parts must be UV-stable: Black, White, or Grey (or carbon-fiber, Black or Grey). Interior has far more color options.</p>
+        <div class="form-row single"><div class="field"><label>Preferred color / finish</label><input type="text" name="color_pref"></div></div>
+      </fieldset>
+
+      <div class="price-callout">
+        <strong>Base price: $40</strong> — includes designing the cradle to fit your specific make &amp; model. Carbon-fiber reinforced: +25%. Nylon: priced separately, by request.
+      </div>
+
+      <div class="form-row single"><div class="field"><label>Anything else we should know?</label><textarea name="notes"></textarea></div></div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Submit Order Request</button>
+      <p class="form-status" id="status-binocular"></p>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
+     FORM 3 — VHF HOLSTER
+========================================================= -->
+<section class="form-section" id="vhf">
+  <div class="container" style="max-width:820px;">
+    <div class="form-head">
+      <div>
+        <span class="eyebrow">Handheld VHF Holster</span>
+        <h2>Custom-fit to your radio.</h2>
+      </div>
+      <a class="docx-link" href="downloads/StuffForSailors_Order_VHF_Holster.docx" download>&#8681; Download as Word doc</a>
+    </div>
+
+    <form class="form-card" data-form-name="VHF Holster Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New order: VHF Holster">
+      <input type="hidden" name="form_type" value="VHF Holster Order">
+
+      <fieldset>
+        <legend>Client Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="field"><label>Best way to reach you</label><input type="text" name="best_contact"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vessel Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Vessel name</label><input type="text" name="vessel_name"></div>
+          <div class="field"><label>Make &amp; model</label><input type="text" name="vessel_model"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>VHF Specifications</legend>
+        <div class="form-row">
+          <div class="field"><label>VHF make &amp; model</label><input type="text" name="vhf_model"></div>
+          <div class="field"><label>With or without belt clip?</label><input type="text" name="belt_clip"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Radio height (not counting antenna)</label><input type="text" name="radio_height"></div>
+          <div class="field"><label>Width</label><input type="text" name="radio_width"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Depth / thickness</label><input type="text" name="radio_depth"></div>
+          <div class="field"><label>Antenna base diameter</label><input type="text" name="antenna_diameter"></div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Any protruding buttons / PTT side to account for?</label><input type="text" name="buttons_notes"></div></div>
+        <div class="field" style="margin:14px 0;">
+          <label>Retention preference</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="retention" value="Snug friction fit"> Snug friction fit</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Positive clip"> Positive clip / latch</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Strap"> Strap over the top</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Advise me"> Advise me</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mount</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Mount type</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="mount_type" value="Rail clamp"> Rail clamp</label>
+            <label class="check-pill"><input type="radio" name="mount_type" value="Flat surface"> Flat surface / bulkhead screw mount</label>
+            <label class="check-pill"><input type="radio" name="mount_type" value="Not sure"> Not sure — advise me</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>If rail-mounted: rail outside diameter</label><input type="text" name="rail_diameter"></div>
+          <div class="field"><label>Rail orientation</label><input type="text" name="rail_orientation"></div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Where on the boat will it live?</label><input type="text" name="mount_location"></div></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mounting Environment &amp; Material</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Where will this be mounted?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="environment" value="Interior"> Interior</label>
+            <label class="check-pill"><input type="radio" name="environment" value="Exterior"> Exterior (cockpit / on deck)</label>
+          </div>
+        </div>
+        <p class="form-note">Exterior parts must be UV-stable: Black, White, or Grey (or carbon-fiber, Black or Grey). Interior has far more color options.</p>
+        <div class="form-row single"><div class="field"><label>Preferred color / finish</label><input type="text" name="color_pref"></div></div>
+      </fieldset>
+
+      <div class="price-callout">
+        <strong>Base price: $40</strong> — includes designing the holster to fit your specific make &amp; model. Carbon-fiber reinforced: +25%. Nylon: priced separately, by request.
+      </div>
+
+      <div class="form-row single"><div class="field"><label>Anything else we should know?</label><textarea name="notes"></textarea></div></div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Submit Order Request</button>
+      <p class="form-status" id="status-vhf"></p>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
+     FORM 4 — GENERAL CUSTOM PROJECT
+========================================================= -->
+<section class="form-section" id="general">
+  <div class="container" style="max-width:820px;">
+    <div class="form-head">
+      <div>
+        <span class="eyebrow">Custom Project</span>
+        <h2>Something else in mind?</h2>
+      </div>
+      <a class="docx-link" href="downloads/StuffForSailors_Custom_Order_General.docx" download>&#8681; Download as Word doc</a>
+    </div>
+
+    <form class="form-card" data-form-name="Custom Project Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New order: Custom Project">
+      <input type="hidden" name="form_type" value="Custom Project Order">
+
+      <fieldset>
+        <legend>Client Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="field"><label>Best way to reach you</label><input type="text" name="best_contact"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vessel Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Vessel name</label><input type="text" name="vessel_name"></div>
+          <div class="field"><label>Make &amp; model</label><input type="text" name="vessel_model"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Length</label><input type="text" name="vessel_length"></div>
+          <div class="field"><label>Home port / marina</label><input type="text" name="home_port"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Custom Project</legend>
+        <div class="form-row single">
+          <div class="field"><label>What do you want us to make? Describe the item and what it needs to do.</label><textarea name="project_description" rows="4"></textarea></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>What will it hold, secure, or mount? (make/model of any gear it's built around)</label><textarea name="gear_details"></textarea></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Key dimensions (list all you can)</label><textarea name="dimensions" placeholder="Length x width x height, diameters, thicknesses..."></textarea></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Where and how will it be mounted? Note any nearby trim, curves, or obstructions.</label><textarea name="mount_details"></textarea></div>
+        </div>
+        <div class="field" style="margin:14px 0;">
+          <label>Reference photos / sketches?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="has_photos" value="Yes, attaching"> Yes — I'll email them separately</label>
+            <label class="check-pill"><input type="radio" name="has_photos" value="No"> No</label>
+            <label class="check-pill"><input type="radio" name="has_photos" value="Need help measuring"> Need help measuring</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mounting Environment &amp; Material</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Where will this be mounted?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="environment" value="Interior"> Interior</label>
+            <label class="check-pill"><input type="radio" name="environment" value="Exterior"> Exterior (cockpit / on deck)</label>
+          </div>
+        </div>
+        <p class="form-note">Exterior parts must be UV-stable: Black, White, or Grey (or carbon-fiber, Black or Grey). Interior has far more color options.</p>
+        <div class="form-row single"><div class="field"><label>Preferred color / finish</label><input type="text" name="color_pref"></div></div>
+      </fieldset>
+
+      <div class="price-callout">
+        <strong>Pricing varies by project</strong> — site visit/consultation (if needed), design time, materials, and print time all factor in. We'll follow up with a firm quote once we understand the project.
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Submit Project Request</button>
+      <p class="form-status" id="status-general"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="images/logo.png" alt="Stuff for Sailors"><span>Stuff for Sailors</span></div>
+        <p class="footer-tag">Solutions for your mobile lifestyle. Boat · Van · RV. Seattle, WA.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/fb-icon.png" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Custom Order</a>
+      </div>
+      <div>
+        <h4>Order Forms</h4>
+        <a href="order.html#washboard">Washboard Rack</a>
+        <a href="order.html#binocular">Binocular Cradle</a>
+        <a href="order.html#vhf">VHF Holster</a>
+        <a href="order.html#general">Custom Project</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a>
+        <a href="tel:4256774829">425-677-4829</a>
+        <a href="contact.html">Contact page</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stuff for Sailors LLC. All rights reserved.</span>
+      <span>Seattle, WA</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Highlight the active order-nav pill based on scroll position
+const sections = document.querySelectorAll('.form-section');
+const navLinks = document.querySelectorAll('.order-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 160) current = s.id; });
+  navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+});
+
+// Generic Formspree-style AJAX submit handler for all four forms.
+// Replace action="https://formspree.io/f/YOUR_FORM_ID" on each <form> with
+// your real Formspree (or Web3Forms) endpoint before going live.
+document.querySelectorAll('form[data-form-name]').forEach(form => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const statusEl = form.querySelector('.form-status');
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      const resp = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (resp.ok) {
+        statusEl.textContent = "Thanks — your request is in! We'll follow up by email soon.";
+        statusEl.className = 'form-status show ok';
+        form.reset();
+      } else {
+        throw new Error('Submit failed');
+      }
+    } catch (err) {
+      statusEl.textContent = "Something went wrong sending this. Please email sailoratlarge@stuffforsailors.com directly, or try again.";
+      statusEl.className = 'form-status show err';
+    } finally {
+      btn.disabled = false; btn.textContent = 'Submit Request';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
