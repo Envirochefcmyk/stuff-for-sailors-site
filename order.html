@@ -16,6 +16,11 @@
   .form-section:last-of-type{border-bottom:none;}
   .form-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:30px;}
   .form-head h2{margin-bottom:.2em;}
+  .form-head-left{display:flex;align-items:center;gap:20px;}
+  .form-thumb{width:96px;height:96px;flex:0 0 auto;background:var(--teal-pale);border-radius:12px;
+    display:flex;align-items:center;justify-content:center;padding:10px;}
+  .form-thumb img{max-width:100%;max-height:100%;object-fit:contain;}
+  @media(max-width:560px){.form-thumb{display:none;}}
   .docx-link{font-size:.86rem;color:var(--steel);display:inline-flex;align-items:center;gap:6px;}
 </style>
 </head>
@@ -44,6 +49,9 @@
     <span class="eyebrow">Custom Order</span>
     <h1 style="font-size:clamp(2rem,3.6vw,2.8rem);">Let's build something that fits.</h1>
     <p class="lede">Pick the form that matches what you need. Every order starts with a prototype in low-cost PLA to confirm fit — it's yours to keep either way — before we move to the final build in your chosen material. A 50% deposit gets things started.</p>
+    <div class="callout caution" style="max-width:760px;margin-top:24px;">
+      <p style="margin:0;"><strong>Please note:</strong> Stuff for Sailors products are designed for gear storage, organization, and convenience — not for mission-critical or life-safety use. They are not a substitute for certified rigging, safety equipment, or any application where failure could put someone at risk. 3D-printed parts can fail under load or over time, and should never be relied upon in a situation where that failure would be dangerous.</p>
+    </div>
   </div>
 </section>
 
@@ -62,14 +70,17 @@
 <section class="form-section" id="washboard">
   <div class="container" style="max-width:820px;">
     <div class="form-head">
-      <div>
-        <span class="eyebrow">Companionway Washboard Storage Rack</span>
-        <h2>Keep your boards stowed and protected.</h2>
+      <div class="form-head-left">
+        <div class="form-thumb"><img src="images/washboard-rack.png" alt="Companionway washboard storage rack"></div>
+        <div>
+          <span class="eyebrow">Companionway Washboard Storage Rack</span>
+          <h2>Keep your boards stowed and protected.</h2>
+        </div>
       </div>
       <a class="docx-link" href="downloads/StuffForSailors_Order_Washboard_Rack.docx" download>&#8681; Download as Word doc</a>
     </div>
 
-    <form class="form-card" data-form-name="Washboard Rack Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="form-card" data-form-name="Washboard Rack Order" action="https://formspree.io/f/xnpqnwev" method="POST">
       <input type="hidden" name="_subject" value="New order: Companionway Washboard Rack">
       <input type="hidden" name="form_type" value="Washboard Rack Order">
 
@@ -157,14 +168,17 @@
 <section class="form-section" id="binocular">
   <div class="container" style="max-width:820px;">
     <div class="form-head">
-      <div>
-        <span class="eyebrow">Binocular Cradle</span>
-        <h2>Custom-fit to your binoculars.</h2>
+      <div class="form-head-left">
+        <div class="form-thumb"><img src="images/binocular-cradle.png" alt="Binocular cradle mount"></div>
+        <div>
+          <span class="eyebrow">Binocular Cradle</span>
+          <h2>Custom-fit to your binoculars.</h2>
+        </div>
       </div>
       <a class="docx-link" href="downloads/StuffForSailors_Order_Binocular_Cradle.docx" download>&#8681; Download as Word doc</a>
     </div>
 
-    <form class="form-card" data-form-name="Binocular Cradle Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="form-card" data-form-name="Binocular Cradle Order" action="https://formspree.io/f/mwlkpzev" method="POST">
       <input type="hidden" name="_subject" value="New order: Binocular Cradle">
       <input type="hidden" name="form_type" value="Binocular Cradle Order">
 
@@ -253,14 +267,17 @@
 <section class="form-section" id="vhf">
   <div class="container" style="max-width:820px;">
     <div class="form-head">
-      <div>
-        <span class="eyebrow">Handheld VHF Holster</span>
-        <h2>Custom-fit to your radio.</h2>
+      <div class="form-head-left">
+        <div class="form-thumb"><img src="images/vhf-holster.png" alt="Handheld VHF radio holster"></div>
+        <div>
+          <span class="eyebrow">Handheld VHF Holster</span>
+          <h2>Custom-fit to your radio.</h2>
+        </div>
       </div>
       <a class="docx-link" href="downloads/StuffForSailors_Order_VHF_Holster.docx" download>&#8681; Download as Word doc</a>
     </div>
 
-    <form class="form-card" data-form-name="VHF Holster Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="form-card" data-form-name="VHF Holster Order" action="https://formspree.io/f/xbgjlbro" method="POST">
       <input type="hidden" name="_subject" value="New order: VHF Holster">
       <input type="hidden" name="form_type" value="VHF Holster Order">
 
@@ -358,14 +375,17 @@
 <section class="form-section" id="general">
   <div class="container" style="max-width:820px;">
     <div class="form-head">
-      <div>
-        <span class="eyebrow">Custom Project</span>
-        <h2>Something else in mind?</h2>
+      <div class="form-head-left">
+        <div class="form-thumb"><img src="images/logo.png" alt="Stuff for Sailors — custom project"></div>
+        <div>
+          <span class="eyebrow">Custom Project</span>
+          <h2>Something else in mind?</h2>
+        </div>
       </div>
       <a class="docx-link" href="downloads/StuffForSailors_Custom_Order_General.docx" download>&#8681; Download as Word doc</a>
     </div>
 
-    <form class="form-card" data-form-name="Custom Project Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form class="form-card" data-form-name="Custom Project Order" action="https://formspree.io/f/mdeokjnl" method="POST">
       <input type="hidden" name="_subject" value="New order: Custom Project">
       <input type="hidden" name="form_type" value="Custom Project Order">
 
@@ -447,8 +467,8 @@
         <div class="footer-brand"><img src="images/logo.png" alt="Stuff for Sailors"><span>Stuff for Sailors</span></div>
         <p class="footer-tag">Solutions for your mobile lifestyle. Boat · Van · RV. Seattle, WA.</p>
         <div class="social-row">
-          <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/fb-icon.png" alt="Facebook"></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/profile.php?id=61592294143564" target="_blank" rel="noopener"><img src="images/fb-icon.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/stuffforsailors/" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram"></a>
         </div>
       </div>
       <div>
@@ -471,6 +491,9 @@
         <a href="contact.html">Contact page</a>
       </div>
     </div>
+    <p style="font-size:.8rem;color:#8b9a9d;border-top:1px solid #333;margin-top:40px;padding-top:20px;max-width:720px;">
+      <strong style="color:#cfd8db;">Please note:</strong> Stuff for Sailors products are designed for gear storage and organization — not for mission-critical or life-safety use, and not a substitute for certified rigging or safety equipment.
+    </p>
     <div class="footer-bottom">
       <span>© 2026 Stuff for Sailors LLC. All rights reserved.</span>
       <span>Seattle, WA</span>
@@ -489,8 +512,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Generic Formspree-style AJAX submit handler for all four forms.
-// Replace action="https://formspree.io/f/YOUR_FORM_ID" on each <form> with
-// your real Formspree (or Web3Forms) endpoint before going live.
+// Formspree endpoints are wired in above — each form POSTs its own real endpoint.
 document.querySelectorAll('form[data-form-name]').forEach(form => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
