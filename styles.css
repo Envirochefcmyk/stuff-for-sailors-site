@@ -184,6 +184,25 @@ img{max-width:100%;display:block;}
 .callout.caution{background:#fff8ec;border-left-color:#e2a63b;}
 .callout.caution strong{color:#8a5a12;}
 
+/* ---------- "get you home" section (homepage teaser + order page detail) ---------- */
+.gyh-section{background:var(--ink);color:#e8edee;padding:76px 0;}
+.gyh-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.gyh-eyebrow{font-family:'Poppins',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:.9em;display:block;}
+.gyh-section h2{color:var(--white);font-size:clamp(1.7rem,3vw,2.3rem);}
+.gyh-section p{color:#b7c2c4;font-size:1.03rem;}
+.gyh-list{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;}
+.gyh-list li{font-family:'Poppins',sans-serif;font-weight:600;font-size:.88rem;color:#dbe4e5;
+  padding-left:20px;position:relative;}
+.gyh-list li::before{content:"⚓";position:absolute;left:0;top:0;color:var(--teal);font-size:.8rem;}
+.gyh-panel{background:#242424;border:1px solid #3a3a3a;border-radius:var(--radius);padding:30px;}
+.gyh-panel h3{color:var(--white);font-size:1.1rem;margin-bottom:.6em;}
+.gyh-panel p{color:#b7c2c4;font-size:.94rem;margin-bottom:0;}
+.gyh-panel .step{color:var(--teal);font-family:'Poppins',sans-serif;font-weight:700;font-size:.8rem;
+  text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:6px;}
+@media(max-width:900px){.gyh-grid{grid-template-columns:1fr;}.gyh-list{grid-template-columns:1fr;}}
+
+
 /* ---------- forms ---------- */
 .form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:36px;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
