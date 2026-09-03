@@ -157,6 +157,7 @@ img{max-width:100%;display:block;}
 
 /* ---------- product grid ---------- */
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.grid-2-catalog{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
 .product-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
   transition:transform .2s ease, box-shadow .2s ease;display:flex;flex-direction:column;}
 .product-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.08);}
@@ -167,7 +168,7 @@ img{max-width:100%;display:block;}
 .product-body p{color:var(--steel);font-size:.94rem;flex:1;}
 .product-meta{display:flex;justify-content:space-between;align-items:center;margin-top:14px;}
 .price-tag{font-family:'Poppins',sans-serif;font-weight:700;color:var(--teal-dark);}
-@media(max-width:900px){.grid-3{grid-template-columns:1fr;}}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr;}.grid-2-catalog{grid-template-columns:1fr;}}
 
 /* ---------- process steps ---------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
