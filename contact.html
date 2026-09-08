@@ -64,6 +64,36 @@
       </div>
     </div>
 
+    <div class="panel mt-lg">
+      <span class="eyebrow" style="margin-bottom:.4em;">Where We Are</span>
+      <h3 style="margin-bottom:.4em;">Live vessel position</h3>
+      <p class="small" style="margin-bottom:18px;">
+        Stuff for Sailors operates from a liveaboard sailboat — <strong>MMSI 368316770</strong>,
+        call sign <strong>WDN8353</strong>. If you're cruising the same waters and want to know
+        whether we're nearby, here's our last reported AIS position.
+      </p>
+
+      <div id="aisMap" style="border-radius:10px;overflow:hidden;border:1px solid var(--line);">
+        <script type="text/javascript">
+          var width  = "100%";
+          var height = "380";
+          var latitude  = "47.68";
+          var longitude = "-122.41";
+          var zoom  = "9";
+          var names = true;
+          var mmsi  = "368316770";
+          var show_track = true;
+        </script>
+        <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+      </div>
+
+      <p class="small" style="margin-top:14px;font-style:italic;">
+        Position updates depend on shore-based AIS coverage. Offshore or in remote anchorages
+        the map may show our last coastal position rather than where we are right now — so treat
+        it as a general indication, not a live track. Map data by VesselFinder.
+      </p>
+    </div>
+
     <div class="form-card mt-lg">
       <h3 style="margin-bottom:.3em;">Send a Message</h3>
       <p class="small" style="margin-bottom:22px;">For a specific product order, use the <a href="order.html">custom order form</a> instead — it captures the details we need to quote accurately.</p>
