@@ -22,97 +22,105 @@
       <a href="about.html">About</a>
       <a href="order.html">Custom Order</a>
       <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html#live-position">Live Position</a>
       <a href="order.html" class="nav-cta">Start a Project</a>
     </nav>
   </div>
 </header>
 
-<section class="hero" style="padding:64px 0;">
-  <div class="container" style="max-width:720px;">
-    <span class="eyebrow">Get In Touch</span>
-    <h1 style="font-size:clamp(2rem,3.6vw,2.8rem);">Have a question before you order?</h1>
-    <p class="lede">Whether it's about a custom project, the marine trades, or just a general question — reach out directly. If you already know what you need, the <a href="order.html">custom order form</a> is the fastest way to get a quote moving.</p>
-  </div>
-</section>
+<section class="section" style="padding:44px 0 60px;" id="live-position">
+  <div class="container">
+    <div class="contact-split">
 
-<section class="section" style="padding-top:0;">
-  <div class="container" style="max-width:720px;">
-    <div class="panel">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:8px;">
-        <div>
-          <span class="eyebrow" style="margin-bottom:.3em;">Email</span>
-          <p style="margin:0;"><a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a></p>
+      <!-- ---------- LEFT: live position ---------- -->
+      <div>
+        <span class="eyebrow">Where We Are</span>
+        <h2 style="font-size:1.5rem;margin-bottom:.35em;">Live vessel position</h2>
+        <p class="small" style="margin-bottom:14px;">
+          Stuff for Sailors operates aboard <strong>STOÏQUE</strong>, a 1984 Corbin 39 sailboat.
+          If you're cruising the same waters and want to know whether we're nearby, here's our
+          last reported AIS position.
+        </p>
+
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line);">
+          <script type="text/javascript">
+            var width  = "100%";
+            var height = "300";
+            var latitude  = "47.68";
+            var longitude = "-122.41";
+            var zoom  = "9";
+            var names = true;
+            var mmsi  = "368316770";
+            var show_track = true;
+          </script>
+          <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
         </div>
-        <div>
-          <span class="eyebrow" style="margin-bottom:.3em;">Phone</span>
-          <p style="margin:0;"><a href="tel:4256774829">425-677-4829</a></p>
+
+        <div class="callout" style="margin-top:14px;padding:16px 18px;">
+          <p style="margin:0 0 .6em;font-size:.88rem;"><strong>Reaching us underway.</strong>
+          Position updates depend on shore-based AIS coverage, so offshore or in a remote anchorage
+          the map may show our last coastal position rather than where we actually are.</p>
+          <p style="margin:0;font-size:.88rem;">Either way, we're still reachable — by email or the
+          phone number listed here wherever there's a connection, and we monitor
+          <strong>VHF channels 16 and 71</strong> essentially around the clock, anywhere.
+          If you spot us on AIS, just hail us.</p>
         </div>
+        <p class="small" style="margin-top:10px;font-style:italic;">Map data by VesselFinder.</p>
       </div>
-      <hr class="divider" style="margin:20px 0;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-        <div>
-          <span class="eyebrow" style="margin-bottom:.3em;">Based In</span>
-          <p style="margin:0;">Seattle, WA</p>
-        </div>
-        <div>
-          <span class="eyebrow" style="margin-bottom:.3em;">Follow Along</span>
-          <div class="social-row" style="margin-top:4px;">
-            <a href="https://www.facebook.com/profile.php?id=61592294143564" target="_blank" rel="noopener" style="filter:none;"><img src="images/fb-icon.png" alt="Facebook" style="filter:none;width:26px;height:26px;"></a>
-            <a href="https://www.instagram.com/stuffforsailors/" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram" style="filter:none;width:26px;height:26px;"></a>
+
+      <!-- ---------- RIGHT: traditional contact ---------- -->
+      <div>
+        <span class="eyebrow">Get In Touch</span>
+        <h1 style="font-size:clamp(1.7rem,2.8vw,2.3rem);">Have a question before you order?</h1>
+        <p class="lede" style="font-size:1rem;">Whether it's about a custom project, the marine
+        trades, or just a general question — reach out directly. If you already know what you need,
+        the <a href="order.html">custom order form</a> is the fastest way to get a quote moving.</p>
+
+        <div class="panel" style="margin-top:22px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div>
+              <span class="eyebrow" style="margin-bottom:.3em;">Email</span>
+              <p style="margin:0;font-size:.92rem;"><a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a></p>
+            </div>
+            <div>
+              <span class="eyebrow" style="margin-bottom:.3em;">Phone</span>
+              <p style="margin:0;"><a href="tel:4256774829">425-677-4829</a></p>
+            </div>
+          </div>
+          <hr class="divider" style="margin:18px 0;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div>
+              <span class="eyebrow" style="margin-bottom:.3em;">Based In</span>
+              <p style="margin:0;">Seattle, WA</p>
+            </div>
+            <div>
+              <span class="eyebrow" style="margin-bottom:.3em;">Follow Along</span>
+              <div class="social-row" style="margin-top:4px;">
+                <a href="https://www.facebook.com/profile.php?id=61592294143564" target="_blank" rel="noopener"><img src="images/fb-icon.png" alt="Facebook" style="filter:none;width:26px;height:26px;"></a>
+                <a href="https://www.instagram.com/stuffforsailors/" target="_blank" rel="noopener"><img src="images/ig-icon.png" alt="Instagram" style="filter:none;width:26px;height:26px;"></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="panel mt-lg">
-      <span class="eyebrow" style="margin-bottom:.4em;">Where We Are</span>
-      <h3 style="margin-bottom:.4em;">Live vessel position</h3>
-      <p class="small" style="margin-bottom:18px;">
-        Stuff for Sailors operates from a liveaboard sailboat. If you're cruising the same waters
-        and want to know whether we're nearby, here's our last reported AIS position.
-      </p>
-
-      <div id="aisMap" style="border-radius:10px;overflow:hidden;border:1px solid var(--line);">
-        <script type="text/javascript">
-          var width  = "100%";
-          var height = "380";
-          var latitude  = "47.68";
-          var longitude = "-122.41";
-          var zoom  = "9";
-          var names = true;
-          var mmsi  = "368316770";
-          var show_track = true;
-        </script>
-        <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
-      </div>
-
-      <div class="callout" style="margin-top:18px;">
-        <p style="margin:0 0 .7em;"><strong>Reaching us underway.</strong> Position updates depend on
-        shore-based AIS coverage, so offshore or in a remote anchorage the map may show our last
-        coastal position rather than where we actually are.</p>
-        <p style="margin:0;">Either way, we're still reachable — by email or VOIP wherever there's a
-        connection, and we monitor <strong>VHF channels 16 and 71</strong> essentially around the
-        clock, anywhere. If you spot us on AIS, just hail us.</p>
-      </div>
-
-      <p class="small" style="margin-top:12px;font-style:italic;">Map data by VesselFinder.</p>
-    </div>
-
-    <div class="form-card mt-lg">
-      <h3 style="margin-bottom:.3em;">Send a Message</h3>
-      <p class="small" style="margin-bottom:22px;">For a specific product order, use the <a href="order.html">custom order form</a> instead — it captures the details we need to quote accurately.</p>
-
-      <form data-form-name="General Contact" action="https://formspree.io/f/xqpkajzg" method="POST">
-        <input type="hidden" name="_subject" value="New message from stuffforsailors.com contact page">
-        <div class="form-row">
-          <div class="field"><label>Name</label><input type="text" name="name" required></div>
-          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        <div class="form-card" style="margin-top:22px;">
+          <h3 style="margin-bottom:.3em;">Send a Message</h3>
+          <p class="small" style="margin-bottom:18px;">For a specific product order, use the
+            <a href="order.html">custom order form</a> instead — it captures the details we need to quote accurately.</p>
+          <form data-form-name="General Contact" action="https://formspree.io/f/xqpkajzg" method="POST">
+            <input type="hidden" name="_subject" value="New message from stuffforsailors.com contact page">
+            <div class="form-row">
+              <div class="field"><label>Name</label><input type="text" name="name" required></div>
+              <div class="field"><label>Email</label><input type="email" name="email" required></div>
+            </div>
+            <div class="form-row single"><div class="field"><label>Subject</label><input type="text" name="subject"></div></div>
+            <div class="form-row single"><div class="field"><label>Message</label><textarea name="message" rows="4" required></textarea></div></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+            <p class="form-status" id="status-contact"></p>
+          </form>
         </div>
-        <div class="form-row single"><div class="field"><label>Subject</label><input type="text" name="subject"></div></div>
-        <div class="form-row single"><div class="field"><label>Message</label><textarea name="message" rows="5" required></textarea></div></div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
-        <p class="form-status" id="status-contact"></p>
-      </form>
+      </div>
+
     </div>
   </div>
 </section>

@@ -271,3 +271,19 @@ legend{font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;padding:0
 .thumb-strip a:hover img{transform:scale(1.08);opacity:.85;}
 @media(max-width:1100px){.thumb-strip{grid-template-columns:repeat(5,1fr);}}
 @media(max-width:620px){.thumb-strip{grid-template-columns:repeat(4,1fr);}}
+
+/* ---- contact page: live position left, contact right ---- */
+.contact-split{display:grid;grid-template-columns:0.85fr 1.15fr;gap:44px;align-items:start;}
+@media(max-width:900px){.contact-split{grid-template-columns:1fr;gap:36px;}}
+
+/* ---- refit photo grid (about page) ---- */
+.refit-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0;}
+.refit-grid figure{margin:0;}
+.refit-grid img{border-radius:12px;width:100%;aspect-ratio:4/3;object-fit:cover;}
+.refit-grid figcaption{font-size:.82rem;color:var(--steel);margin-top:7px;font-style:italic;}
+@media(max-width:640px){.refit-grid{grid-template-columns:1fr;}}
+
+/* ---- secondary product photo on catalog cards ---- */
+.alt-shot{display:flex;align-items:center;gap:10px;padding:10px 22px 0;}
+.alt-shot img{width:64px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line);flex:0 0 auto;}
+.alt-shot span{font-size:.78rem;color:var(--steel);font-style:italic;}
