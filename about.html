@@ -176,6 +176,7 @@
         <a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a>
         <a href="tel:4256774829">425-677-4829</a>
         <a href="contact.html">Contact page</a>
+        <a href="https://g.page/r/CaJlqjnGEkUvEBM/review" target="_blank" rel="noopener">Leave a Google review</a>
       </div>
     </div>
     <p style="font-size:.8rem;color:#8b9a9d;border-top:1px solid #333;margin-top:40px;padding-top:20px;max-width:720px;">
@@ -187,6 +188,33 @@
     </div>
   </div>
 </footer>
+
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<script>
+function openLightbox(img){
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightboxImg').alt = img.alt || '';
+  document.getElementById('lightboxCap').textContent = img.alt || '';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e){
+  if(e && e.target.tagName === 'IMG' && e.target.id === 'lightboxImg') return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.product-media img, .alt-shot img, .refit-grid img, figure img')
+    .forEach(img => { img.classList.add('zoomable'); img.onclick = () => openLightbox(img); });
+});
+</script>
 
 </body>
 </html>

@@ -71,6 +71,7 @@
     <a href="#binocular">Binocular Cradle</a>
     <a href="#vhf">VHF Holster</a>
     <a href="#toolbox">Toolbox Mount</a>
+    <a href="#blackout">Blackout Covers</a>
     <a href="#general">Custom Project</a>
     <a href="#getyouhome">Get You Home</a>
   </div>
@@ -470,6 +471,98 @@
 </section>
 
 <!-- =========================================================
+     FORM — PORTLIGHT / HATCH BLACKOUT COVERS
+========================================================= -->
+<section class="form-section" id="blackout">
+  <div class="container" style="max-width:820px;">
+    <div class="form-head">
+      <div class="form-head-left">
+        <div class="form-thumb"><img src="images/blackout-cover.jpg" alt="Portlight blackout cover"></div>
+        <div>
+          <span class="eyebrow">Portlight &amp; Hatch Blackout Covers</span>
+          <h2>Block the light until you're ready.</h2>
+        </div>
+      </div>
+      <a class="docx-link" href="downloads/StuffForSailors_Custom_Order_General.docx" download>&#8681; Download order form</a>
+    </div>
+
+    <form class="form-card" data-form-name="Blackout Cover Order" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New order: Portlight/Hatch Blackout Cover">
+      <input type="hidden" name="form_type" value="Blackout Cover Order">
+
+      <fieldset>
+        <legend>Client Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="field"><label>Best way to reach you</label><input type="text" name="best_contact"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vessel Information</legend>
+        <div class="form-row">
+          <div class="field"><label>Vessel name</label><input type="text" name="vessel_name"></div>
+          <div class="field"><label>Make &amp; model</label><input type="text" name="vessel_model"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cover Specifications</legend>
+        <div class="form-row">
+          <div class="field"><label>How many covers?</label><input type="number" min="1" name="cover_count"></div>
+          <div class="field"><label>Portlight or hatch?</label>
+            <select name="opening_type"><option value="">Select…</option><option>Portlight</option><option>Deck hatch</option><option>Both</option></select>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Opening dimensions — length × width for each (and shape if not rectangular)</label>
+            <textarea name="dimensions" placeholder="e.g. Vee-berth portlight: 18in x 5in, rounded corners&#10;Main hatch: 20in x 20in square"></textarea></div>
+        </div>
+        <div class="form-row single">
+          <div class="field"><label>Depth of the recess or frame the cover sits into</label><input type="text" name="recess_depth"></div>
+        </div>
+        <div class="field" style="margin:14px 0;">
+          <label>How should it stay in place?</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="retention" value="Friction fit"> Friction fit</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Magnets"> Magnets</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Twist tabs"> Twist tabs</label>
+            <label class="check-pill"><input type="radio" name="retention" value="Advise me"> Advise me</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pattern &amp; Colour</legend>
+        <div class="field" style="margin-bottom:14px;">
+          <label>Style</label>
+          <div class="check-row">
+            <label class="check-pill"><input type="radio" name="style" value="Rainbow"> Rainbow motif</label>
+            <label class="check-pill"><input type="radio" name="style" value="Solid"> Solid colour</label>
+            <label class="check-pill"><input type="radio" name="style" value="Other"> Something else</label>
+          </div>
+        </div>
+        <div class="form-row single"><div class="field"><label>Colour preferences or pattern ideas</label><input type="text" name="colour_notes"></div></div>
+        <p class="form-note">These are interior parts, so the full range of colours and finishes is open.</p>
+      </fieldset>
+
+      <div class="price-callout">
+        <strong>Quoted per cover</strong> — price depends on size, pattern complexity, and material. Calculated from filament cost, print time, energy use, and any design time. Ordering several? Multiples are usually discounted.
+      </div>
+
+      <div class="form-row single"><div class="field"><label>Anything else we should know?</label><textarea name="notes"></textarea></div></div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Submit Order Request</button>
+      <p class="form-status" id="status-blackout"></p>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
      FORM 4 — GENERAL CUSTOM PROJECT
 ========================================================= -->
 <section class="form-section" id="general">
@@ -608,6 +701,7 @@
         <a href="mailto:sailoratlarge@stuffforsailors.com">sailoratlarge@stuffforsailors.com</a>
         <a href="tel:4256774829">425-677-4829</a>
         <a href="contact.html">Contact page</a>
+        <a href="https://g.page/r/CaJlqjnGEkUvEBM/review" target="_blank" rel="noopener">Leave a Google review</a>
       </div>
     </div>
     <p style="font-size:.8rem;color:#8b9a9d;border-top:1px solid #333;margin-top:40px;padding-top:20px;max-width:720px;">
