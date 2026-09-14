@@ -159,6 +159,17 @@ img{max-width:100%;display:block;}
   .video-hero-media{width:100%;height:auto;object-fit:contain;}
 }
 
+/* ---- tagline strip directly under the hero video ---- */
+.video-tagline{padding:28px 0;text-align:center;background:var(--white);}
+.video-tagline p{
+  font-family:'Poppins',sans-serif;font-weight:600;font-size:1.05rem;
+  color:var(--ink);max-width:720px;margin:0 auto;line-height:1.5;
+}
+@media(max-width:600px){
+  .video-tagline{padding:20px 0;}
+  .video-tagline p{font-size:.95rem;}
+}
+
 /* ---- centered hero: large dominant logo, headline/copy below ---- */
 .hero-centered{padding:56px 0 70px;text-align:center;}
 .hero-logo-hero{display:flex;justify-content:center;margin-bottom:28px;}
