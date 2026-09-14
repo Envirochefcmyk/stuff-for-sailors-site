@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,12 +26,14 @@
 </head>
 <body>
 
+<div class="rotate-hint" id="rotateHint" role="status" aria-live="polite">
+  <span class="rotate-hint-icon" aria-hidden="true">&#8635;</span>
+  <span>For the best experience, turn your phone to landscape.</span>
+  <button type="button" class="rotate-hint-close" aria-label="Dismiss" onclick="document.getElementById('rotateHint').style.display='none';">&times;</button>
+</div>
+
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="images/logo.png" alt="Stuff for Sailors logo">
-      <span class="brand-text">Stuff for Sailors</span>
-    </a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <nav class="nav-links">
       <a href="index.html">Home</a>
@@ -475,7 +477,7 @@
 
 <!-- =========================================================
      FORM — QUICK ORDER: SMALL PARTS
-     (Bonai charger mount, AirCube/GPS dongle mounts, PanelPegs —
+     (Bonai charger mount, AirCube/GPS dongle mounts —
      stock-priced accessories, not custom quotes. Add new small
      parts here over time by copying one "item-block" fieldset.)
 ========================================================= -->
@@ -540,24 +542,6 @@
           </div>
         </div>
 
-        <div class="item-block" style="border-top:1px solid var(--line);padding-top:14px;margin-top:14px;">
-          <div class="form-row">
-            <div class="field" style="flex:2;">
-              <label class="check-pill"><input type="checkbox" name="item_panelpegs" value="Yes"> PanelPegs — Circuit Breaker Color Coding — $9.99/75pc</label>
-            </div>
-            <div class="field"><label>Quantity (sets)</label><input type="number" min="0" name="qty_panelpegs" value="0"></div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label>Colors</label>
-              <div class="check-row">
-                <label class="check-pill"><input type="radio" name="panelpegs_colors" value="Standard (25 red / 25 yellow / 25 green)"> Standard (25 red / 25 yellow / 25 green)</label>
-                <label class="check-pill"><input type="radio" name="panelpegs_colors" value="Custom colors"> Custom colors</label>
-              </div>
-            </div>
-            <div class="field"><label>If custom, list colors &amp; counts</label><input type="text" name="panelpegs_custom_colors"></div>
-          </div>
-        </div>
       </fieldset>
 
       <div class="price-callout">
@@ -862,3 +846,4 @@ document.querySelectorAll('form[data-form-name]').forEach(form => {
 
 </body>
 </html>
+
