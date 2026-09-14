@@ -9,12 +9,14 @@
 </head>
 <body>
 
+<div class="rotate-hint" id="rotateHint" role="status" aria-live="polite">
+  <span class="rotate-hint-icon" aria-hidden="true">&#8635;</span>
+  <span>For the best experience, turn your phone to landscape.</span>
+  <button type="button" class="rotate-hint-close" aria-label="Dismiss" onclick="document.getElementById('rotateHint').style.display='none';">&times;</button>
+</div>
+
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="images/logo.png" alt="Stuff for Sailors logo">
-      <span class="brand-text">Stuff for Sailors</span>
-    </a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <nav class="nav-links">
       <a href="index.html">Home</a>
