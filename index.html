@@ -45,13 +45,15 @@
 </head>
 <body>
 
+<div class="rotate-hint" id="rotateHint" role="status" aria-live="polite">
+  <span class="rotate-hint-icon" aria-hidden="true">&#8635;</span>
+  <span>For the best experience, turn your phone to landscape.</span>
+  <button type="button" class="rotate-hint-close" aria-label="Dismiss" onclick="document.getElementById('rotateHint').style.display='none';">&times;</button>
+</div>
+
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="images/logo.png" alt="Stuff for Sailors logo">
-      <span class="brand-text">Stuff for Sailors</span>
-    </a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <nav class="nav-links">
       <a href="index.html" class="active">Home</a>
@@ -76,6 +78,12 @@
   </video>
 </section>
 
+<!-- ============ VIDEO TAGLINE ============ -->
+<section class="video-tagline">
+  <div class="container">
+    <p>What's the one thing every boat needs? Better storage solutions. We help organize your boat like a pro. Seattle and beyond.</p>
+  </div>
+</section>
 
 <!-- ============ PRODUCT THUMB STRIP ============ -->
 <section class="thumb-strip">
@@ -93,7 +101,6 @@
 <section class="hero hero-centered" style="padding-top:52px;">
   <div class="container">
     <div class="hero-copy-centered">
-      <span class="eyebrow">Boat Locker Organization &amp; Marine Gear Storage · Seattle</span>
       <h1>If it doesn't fit off the shelf,<br>we design <span class="accent">one that does.</span></h1>
       <p class="lede">Custom-fit gear storage for boats, vans, and RVs — 3D-printed to fit your space, in marine-grade materials.</p>
       <div class="hero-tags">
@@ -260,7 +267,6 @@
         <a href="order.html#binocular">Binocular Cradle</a>
         <a href="order.html#vhf">VHF Holster</a>
         <a href="order.html#toolbox">Toolbox Mount</a>
-        <a href="order.html#quickorder">Small Parts</a>
         <a href="order.html#general">Custom Project</a>
       </div>
       <div>
