@@ -154,8 +154,16 @@ img{max-width:100%;display:block;}
 .hero-art img{max-width:100%;filter:drop-shadow(0 18px 30px rgba(10,26,44,.14));}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}.hero{padding:48px 0;}}
 
+/* ---- hero: copy left, video right ---- */
+.hero-video-split{padding:64px 0 56px;}
+.hero-video-split .hero-grid{grid-template-columns:1fr 1fr;}
+.hero-copy h1{text-align:left;}
+.hero-video-col{border-radius:16px;overflow:hidden;line-height:0;
+  box-shadow:0 24px 48px rgba(10,26,44,.18);}
+.hero-video-media{width:100%;height:auto;display:block;}
+@media(max-width:900px){.hero-video-split{padding:40px 0 8px;}}
 
-/* ---- video hero ---- */
+/* ---- video hero (legacy full-bleed variant, kept for reference) ---- */
 .video-hero{width:100%;background:var(--navy-deep);line-height:0;overflow:hidden;}
 .video-hero-media{width:100%;height:auto;display:block;object-fit:cover;}
 @media(max-width:700px){
