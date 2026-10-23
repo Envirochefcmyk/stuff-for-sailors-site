@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-61T0038VN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-
-  gtag("config", "G-61T0038VN7");
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boat Locker Organization & Marine Gear Storage Catalog | Stuff for Sailors</title>
@@ -18,14 +9,12 @@
 </head>
 <body>
 
-<div class="rotate-hint" id="rotateHint" role="status" aria-live="polite">
-  <span class="rotate-hint-icon" aria-hidden="true">&#8635;</span>
-  <span>For the best experience, turn your phone to landscape.</span>
-  <button type="button" class="rotate-hint-close" aria-label="Dismiss" onclick="document.getElementById('rotateHint').style.display='none';">&times;</button>
-</div>
-
 <header class="site-header">
   <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Stuff for Sailors logo">
+      <span class="brand-text">Stuff for Sailors</span>
+    </a>
     <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <nav class="nav-links">
       <a href="index.html">Home</a>
@@ -34,7 +23,6 @@
       <a href="order.html">Custom Order</a>
       <a href="contact.html">Contact</a>
       <a href="contact.html#live-position">Live Position</a>
-      <a href="b2b.html">Trade Services</a>
       <a href="order.html" class="nav-cta">Start a Project</a>
     </nav>
   </div>
@@ -44,21 +32,29 @@
   <div class="container">
     <span class="eyebrow">Boat Locker Organization &amp; Marine Gear Storage</span>
     <h1 style="font-size:clamp(2rem,3.6vw,2.8rem);">Made to order, fit to your rig.</h1>
-    <p class="lede">Custom gear storage and boat locker organization — every product below is a starting design, with dimensions, mounting, and materials customized to your boat, van, or RV before anything gets printed. Every material we use is UV-stable and inherently corrosion-resistant, with no rust or galvanic corrosion to worry about the way you would with a metal fitting. Don't see what you need? The <a href="order.html#general">custom order form</a> covers anything else.</p>
+    <p class="lede">Custom gear storage and boat locker organization — every product below is a starting design, with dimensions, mounting, and materials customized to your boat, van, or RV before anything gets printed. Don't see what you need? The <a href="order.html#general">custom order form</a> covers anything else.</p>
   </div>
 </section>
 
 <section class="section" style="padding:0 0 20px;">
   <div class="container">
-    <figure style="margin:0;max-width:760px;">
-      <video controls muted loop playsinline poster="images/portlight-poster.jpg"
-             style="width:100%;border-radius:14px;background:var(--ink);">
-        <source src="video/portlight-print.mp4" type="video/mp4">
-      </video>
-      <figcaption class="small" style="margin-top:10px;font-style:italic;">
-        A vee-berth portlight cover printing in silk PLA — 13 hours, condensed to 18 seconds.
-      </figcaption>
-    </figure>
+    <div class="video-pair">
+      <figure>
+        <video controls muted loop playsinline poster="images/portlight-poster.jpg"
+               style="width:100%;border-radius:14px;background:var(--ink);">
+          <source src="video/portlight-print.mp4" type="video/mp4">
+        </video>
+        <figcaption class="small" style="margin-top:10px;font-style:italic;">
+          The print: a vee-berth portlight cover in silk PLA — 13 hours, condensed to 18 seconds.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/blackout-cover.jpg" alt="The finished rainbow portlight blackout cover, installed" style="border-radius:14px;width:100%;">
+        <figcaption class="small" style="margin-top:10px;font-style:italic;">
+          The result: the finished cover, installed.
+        </figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -73,7 +69,7 @@
     <div class="grid-2-catalog">
 
       <div class="product-card">
-        <div class="product-media"><img src="images/washboard-rack.png" alt="Companionway washboard storage rack"></div>
+        <div class="product-media pair"><img src="images/washboard-rack.png" alt="Washboard rack design (render)"><img src="images/washboard-installed.jpg" alt="The washboard rack installed, holding the boards"></div>
         <div class="product-body">
           <h3>Companionway Washboard Rack</h3>
           <p>Stows your companionway washboards (drop boards) securely when they're not in the hatch — out of the way, protected, and easy to grab. Built to your exact boards, including the thin sliding edge that rides in the hatch track.</p>
@@ -83,8 +79,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-media"><img src="images/toolbox-mount.png" alt="Mini toolbox wall hanger with French cleat mount"></div>
-          <div class="alt-shot"><img src="images/toolbox-shelf.jpg" alt="Toolbox shelf variant, installed"><span>Toolbox shelf variant, installed</span></div>
+        <div class="product-media pair"><img src="images/toolbox-mount.png" alt="Mini toolbox wall hanger with French cleat mount"><img src="images/toolbox-shelf.jpg" alt="Toolbox shelf variant, installed"></div>
         <div class="product-body">
           <h3>Mini Toolbox Wall Hanger — French Cleat Mount</h3>
           <p>A secure wall mount for U.S. General (Harbor Freight) or Kobalt mini toolboxes, built on a French cleat so the box lifts on and off in seconds. Keeps a small tool chest off the sole and out of the way, wherever you stow it.</p>
@@ -152,6 +147,16 @@
     <div class="grid-2-catalog">
 
       <div class="product-card">
+        <div class="product-media pair"><img src="images/breaker-buddies-installed.jpg" alt="PanelPegs circuit breaker color coding markers installed on a panel"><img src="images/breaker-buddies.jpg" alt="The pegs themselves"></div>
+        <div class="product-body">
+          <h3>PanelPegs — Circuit Breaker Color Coding</h3>
+          <p>Color-code your breaker panel at a glance. Small pegs that clip onto breaker switches so you can see system groupings instantly — no more squinting at faded labels in the dark. 75 pieces: 25 each in red, yellow, and green.</p>
+          <div class="badge-row"><span class="badge">75 pcs</span><span class="badge">Custom colors available</span></div>
+          <div class="product-meta"><span class="price-tag">$9.99</span><a href="order.html#general" class="btn btn-teal" style="padding:9px 18px;font-size:.85rem;">Order</a></div>
+        </div>
+      </div>
+
+      <div class="product-card">
         <div class="product-media"><img src="images/blackout-cover.jpg" alt="Rainbow portlight blackout cover installed in a hatch"></div>
         <div class="product-body">
           <h3>Portlight &amp; Hatch Blackout Covers</h3>
@@ -174,8 +179,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-media"><img src="images/fan-mount.jpg" alt="Custom 80mm fan ventilation mount installed on a cabinet door"></div>
-          <div class="alt-shot"><img src="images/fan-mount-context.jpg" alt="Installed in a cabinet door"><span>Installed in a cabinet door</span></div>
+        <div class="product-media pair"><img src="images/fan-mount.jpg" alt="Custom 80mm fan ventilation mount installed on a cabinet door"><img src="images/fan-mount-context.jpg" alt="Installed in a cabinet door"></div>
         <div class="product-body">
           <h3>Custom Ventilation Components</h3>
           <p>Locker and cabinet ventilation built to your space — fan mounts, bezels, and vent panels sized to your door thickness, fan size, and layout. Keeps air moving through lockers to fight damp and mildew.</p>
@@ -228,7 +232,6 @@
         <a href="catalog.html">Catalog</a>
         <a href="about.html">About</a>
         <a href="order.html">Custom Order</a>
-        <a href="b2b.html">Trade Services</a>
       </div>
       <div>
         <h4>Order Forms</h4>
